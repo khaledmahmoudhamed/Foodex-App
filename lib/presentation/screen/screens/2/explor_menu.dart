@@ -18,42 +18,7 @@ class _ExploreMenuState extends State<ExploreMenu> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: const Color(0xFF53E88B),
-        unselectedItemColor: Colors.blue,
-        currentIndex: i,
-        onTap: (index) {
-          setState(() {
-            i = index;
-          });
-        },
-        items: const [
-          BottomNavigationBarItem(
-              label: "Home",
-              icon: Icon(
-                Icons.home,
-                size: 23,
-              )),
-          BottomNavigationBarItem(
-              label: "Person",
-              icon: Icon(
-                Icons.person,
-                size: 23,
-              )),
-          BottomNavigationBarItem(
-              label: "Buy",
-              icon: Icon(
-                Icons.shopping_cart,
-                size: 23,
-              )),
-          BottomNavigationBarItem(
-              label: "Chat",
-              icon: Icon(
-                Icons.chat,
-                size: 23,
-              )),
-        ],
-      ),
+
       body: SingleChildScrollView(
         child: Column(
           children: [

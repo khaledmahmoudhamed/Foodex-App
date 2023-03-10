@@ -15,9 +15,15 @@ class SignupProcess extends StatefulWidget {
 }
 
 class _SignupProcessState extends State<SignupProcess> {
-  var fName = TextEditingController();
-  var lName = TextEditingController();
-  var mobile = TextEditingController();
+  var fName = TextEditingController(
+    text: CacheHelper.getString(key: MySharedKeys.fName)
+  );
+  var lName = TextEditingController(
+      text: CacheHelper.getString(key: MySharedKeys.lName)
+  );
+  var mobile = TextEditingController(
+      text: CacheHelper.getString(key: MySharedKeys.mobile)
+  );
   var formKey=GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
@@ -143,6 +149,9 @@ class _SignupProcessState extends State<SignupProcess> {
                       radius: 15,
                       onPressed: () {
                         if(formKey.currentState!.validate()){
+                        CacheHelper.putString(key: MySharedKeys.fName, value: fName.text);
+                        CacheHelper.putString(key: MySharedKeys.lName, value: lName.text);
+                        CacheHelper.putString(key: MySharedKeys.mobile, value: mobile.text);
 
                         Navigator.of(context).pushNamedAndRemoveUntil(screens.payment, (route) => false);
                         }

@@ -4,7 +4,6 @@ import 'package:my_app/constant/screens.dart' as screens;
 
 import '../../../../view/default_button.dart';
 import '../../../../view/default_text.dart';
-import 'package:my_app/presentation/screen/screens/1/log_in_screen.dart';
 
 class ForgetPassword extends StatefulWidget {
   const ForgetPassword({Key? key}) : super(key: key);

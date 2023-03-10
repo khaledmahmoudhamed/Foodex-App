@@ -58,7 +58,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           ),
           onDone: (){
             Navigator.pushNamedAndRemoveUntil(context, screens.login, (route) => false);
-            // Navigator.pushNamedAndRemoveUntil(context, screens.amWelcomeScreen, (route) => false);
 
           },
           showSkipButton: true,
@@ -79,9 +78,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         imagePadding: EdgeInsets.zero,
         titlePadding: const EdgeInsets.only(left: 5,right: 5),
         bodyPadding: const EdgeInsets.only(left: 15,right: 15,top: 5),
-
-
-
     );
   }
 }

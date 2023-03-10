@@ -34,7 +34,6 @@ import '../screen/screens/3/edit_payments.dart';
 import '../screen/screens/3/google_map_screen.dart';
 import '../screen/screens/3/menu_details_screen.dart';
 import '../screen/screens/3/order_details.dart';
-import '../screen/screens/3/order_details_with_trash.dart';
 import '../screen/screens/3/payments_screen.dart';
 import '../screen/screens/3/profile_screen.dart';
 

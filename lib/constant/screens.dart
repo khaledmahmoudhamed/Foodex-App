@@ -38,6 +38,7 @@ const notification='/notification';
 const profileTwo='/profileTwo';
 const productDetailsTwo='/productDetailsTwo';
 const menuDetails='/menuDetails';
+
 CameraPosition initialCameraPosition=const CameraPosition(
     target: LatLng(26.8206,30.8025 ),
   zoom: 6

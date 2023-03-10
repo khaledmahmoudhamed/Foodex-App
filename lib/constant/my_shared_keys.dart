@@ -2,5 +2,8 @@ enum MySharedKeys {
   isOnBoarding,
   myEmail,
   myPassword,
-  selectedColor,
+  // selectedColor,
+  fName,
+  lName,
+  mobile,
 }
